@@ -1,0 +1,349 @@
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background-color: rgb(255, 255, 255);
+        overflow-x: hidden;
+    }
+
+    .nodeDiv {
+        background-color: rgb(236, 236, 236);
+
+        border: 2px solid rgb(4, 255, 0);
+        border-left: 0px;
+        border-top: 0px;
+        height: auto;
+        padding: 15px;
+        margin: 10px 0px;
+        border-radius: 7px;
+        cursor: pointer;
+    }
+
+    .relationDiv {
+        display: flex;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+
+    .nodeTitle {
+        font-weight: bolder;
+        font-size: 20px;
+        margin-bottom: 10px;
+        display: block;
+        color: rgb(3, 177, 0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    .container {
+        padding: 0px 80px;
+        width: 100vw;
+
+    }
+
+    .faq-drawer {
+        margin-bottom: 30px;
+    }
+
+    .faq-drawer__content-wrapper {
+        font-size: 1.25em;
+        line-height: 1.4em;
+        overflow: hidden;
+        gap: 20px;
+        transition: 0.5s ease-in-out;
+background-color: #000000a9;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 150px;
+    }
+
+    .faq-drawer__title {
+        border-top: #000 1px solid;
+        cursor: pointer;
+        display: block;
+        font-size: 1.25em;
+        font-weight: 700;
+        padding: 10px 0 0 0;
+        position: relative;
+        margin-bottom: 0;
+        transition: all 0.5s ease-out;
+    }
+
+    .faq-drawer__title::after {
+        border-style: solid;
+        border-width: 1px 1px 0 0;
+        content: " ";
+        display: inline-block;
+        float: right;
+        height: 10px;
+        left: 2px;
+        position: relative;
+        right: 20px;
+        top: 2px;
+        transform: rotate(135deg);
+        transition: 0.35s ease-in-out;
+        vertical-align: top;
+        width: 10px;
+    }
+
+    /* OPTIONAL HOVER STATE */
+    .faq-drawer__title:hover {
+        color: #4E4B52;
+    }
+
+
+
+    .faq-drawer__trigger:checked+.faq-drawer__title::after {
+        transform: rotate(-45deg);
+        transition: 0.25s ease-in-out;
+    }
+
+
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+
+
+
+
+    nav {
+        height: auto;
+        background-color: rgb(220, 220, 220);
+        align-items: center;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+    }
+
+    .display {
+        display: none;
+    }
+
+    nav>img {
+        width: 150px;
+    }
+
+    nav>span>i {
+        cursor: pointer;
+        margin: 20px;
+    }
+
+
+
+
+    .menuNpanel {
+        display: flex;
+    }
+
+    .menu {
+        width: 200px;
+        height: 100vh;
+        padding-top: 10px;
+        transform: translateX(-200px);
+        background-color: rgb(220, 220, 220);
+        position: absolute;
+        transition: 0.5s all;
+        z-index: 1;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+
+    li>span {
+        margin: 10px;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .active {
+        background-color: white;
+        color: rgb(0, 190, 0);
+        border-radius: 7px;
+    }
+
+    .active-icon {
+        color: rgb(0, 190, 0);
+
+    }
+
+
+
+
+
+
+
+
+    .flex_center_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        padding-top: 50px;
+        flex-direction: column;
+
+    }
+
+
+    .noNotification {
+
+        width: 40vw;
+        opacity: 0.3;
+
+    }
+
+    #bell {
+        color: green;
+    }
+
+
+    .notificationsDiv {
+        width: 400px;
+        height: 500px;
+        border: 1px solid black;
+        background-color: rgb(25, 0, 49);
+        position: absolute;
+        z-index: 1;
+        bottom: 10px;
+        right: 10px;
+        transform: translateX(450px);
+
+        border-radius: 10px;
+        transition: 0.5s all;
+        color: white;
+        padding: 10px;
+
+
+
+
+        -webkit-box-shadow: 0px 0px 24px -3px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 24px -3px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 24px -3px rgba(0, 0, 0, 0.75);
+
+    }
+
+    .notificationsDiv>div:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+    }
+
+    .notificationsDiv>div>h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .notielm {
+        display: flex;
+        gap: 10px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.443);
+        margin: 10px;
+        min-height: 65px;
+
+    }
+
+    .notielm>img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.197);
+    }
+
+    .notielm>div {
+        width: 100%;
+
+    }
+
+    .notielm>div>span:nth-child(2) {
+        display: block;
+        font-size: 10px;
+        color: #dddddd;
+    }
+
+    .notielm>div>span:nth-child(3) {
+        font-size: 10px;
+        text-align: right;
+        display: block;
+        color: rgb(0, 234, 0);
+        font-weight: bold;
+        margin-bottom: 5px;
+
+    }
+
+
+
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            padding: 20px;
+        }
+
+        .faq-drawer__content-wrapper {
+            gap: 0px;
+        }
+    }
+
+    @media only screen and (max-width: 1300px) {
+        .faq-drawer__content-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 1025px) {
+        .faq-drawer__content-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        .faq-drawer__content-wrapper {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 0px;
+        }
+        .menuNpanel {
+            position: relative;
+
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        .notificationsDiv {
+            width: 80vw;
+        }
+    }
